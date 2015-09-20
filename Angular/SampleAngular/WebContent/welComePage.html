@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="welcome">
+<script src="angular.min.js"></script>
+<script src="angular.resource.js"></script>
+<script src="angular.js"></script>
+<script src="angular.min.js.map" ></script>
+<script src="welcomePageController.js"></script>
+<script src="bootstrap.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="design.css">
+<body bgcolor="#FFFFE0" ng-controller="welcomecontroller">
+	<div >
+		<table  align="center" width="999px">
+<!--- header goes here -->
+			<tr height="100px" bgcolor="#BDB76B">
+				<td align="center"><h1>Here Goes Heading</h1></td>
+			</tr>
+			
+				<tr height="25" bgcolor="#FFFACD">
+					<td>
+<!--- tabs goes here -->
+			
+<button class="btn-xl" ng-click="btnclick('items')">hello</button>
+<button ng-click="btnclick('summary')">hello</button>
+{{firstname}}
+					</td>
+				</tr>
+		<!--- include pages here -->
+			<tr height="800" bgcolor="#EEE8AA">
+				<td>			
+				 <div ng-if="firstname==='items'" ng-include="'items.html'"></div>
+				  <div ng-if="firstname==='summary'" ng-include="'itemSummaryPage.html'"></div>
+				</td>
+			</tr>
+			
+			</tr>
+	</table>
+	</div>
+</body>
+</html>

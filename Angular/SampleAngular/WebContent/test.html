@@ -1,0 +1,16 @@
+<html ng-app="testApp">
+<script src="angular.min.js"></script>
+<script src="angular.resource.js"></script>
+<script>
+var app=angular.module("testApp",[]);
+app.controller("testController",function($scope){
+$scope.hello="";
+});
+
+</script>
+<body>
+<div ng-controller="testController">
+<div ng-include ="'/items.html'"></div>
+</div>
+</body>
+</html>

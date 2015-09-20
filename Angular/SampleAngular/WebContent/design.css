@@ -1,0 +1,9 @@
+.btn-xl {
+    padding: 10px 40px;
+    font-size: 22px;
+    border-radius: 8px;
+    background-color:#AEB404;
+}
+:hover{
+color: black;
+}

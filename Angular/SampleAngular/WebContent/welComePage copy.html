@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="welcome">
+<script src="angular.min.js"></script>
+<script src="angular.resource.js"></script>
+<script src="angular.js"></script>
+<script src="welcomePageController.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<body bgcolor="#FFFFE0">
+	<div ng-controller="welcomecontroller">
+		<table  align="center" width="999px">
+<!--- header goes here -->
+			<tr height="100px" bgcolor="#BDB76B">
+				<td align="center"><h1>Here Goes Heading</h1></td>
+			</tr>
+			
+				<tr height="25" bgcolor="#FFFACD">
+					<td >
+<!--- tabs goes here -->
+					<h3>tabs</h3>
+					</td>
+				</tr>
+		<!--- include pages here -->
+			<tr height="800" bgcolor="#EEE8AA">
+				<td>
+			
+				
+  <div ng-include="'items.html'"></div>
+ 
+
+				
+				
+				</td>
+			</tr>
+			
+			</tr>
+	</table>
+	</div>
+</body>
+</html>
